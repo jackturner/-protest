@@ -7,11 +7,40 @@
   <meta name="description" content="">
   <meta name="og:image" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" href="voice.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link href="voice.css" rel="stylesheet">
 </head>
 <body>
 
-  <video poster="" id="bgvid" playsinline autoplay muted loop>
+  <a id="info-link" title="Information about “You’ll Never Know We Were Here”" href="#">More Info</a>
+
+  <div id="page">
+
+    <form action="index_submit" method="get" accept-charset="utf-8">
+      <label for="protest">Create your own protest</label>
+      <textarea id="protest" class="cardboard" name="protest" placeholder="Your protest here…"></textarea>
+      <div class="stick"></div>
+      <button type="submit">Submit protest</button>
+    </form>
+
+    <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div>
+
+    <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div>
+
+    <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div>
+
+    <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div>
+
+    <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div>
+
+  </div>
+
+  <video poster="" playsinline autoplay muted loop>
     <source src="video/voice.mp4" type="video/mp4"  />
   </video>
 
