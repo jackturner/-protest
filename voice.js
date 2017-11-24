@@ -7,7 +7,3 @@ $('button').on('click', function(e) {
     data: { protest: $('#protest').val() }
   }).success(function(response){ console.log(response); })
 })
-
-$('video').on('canplaythrough', function() {
-	this.play()
-})
