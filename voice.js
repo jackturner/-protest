@@ -9,6 +9,5 @@ $('button').on('click', function(e) {
 })
 
 $(window).on('scroll', function() {
-
 	$('.dim').css('opacity', (Math.min(0.6, (window.scrollY / $(window).height() / 2) + 0.3)));
 })
