@@ -7,3 +7,8 @@ $('button').on('click', function(e) {
     data: { protest: $('#protest').val() }
   }).success(function(response){ console.log(response); })
 })
+
+$(window).on('scroll', function() {
+
+	$('.dim').css('opacity', (Math.min(0.6, (window.scrollY / $(window).height() / 2) + 0.3)));
+})
