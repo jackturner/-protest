@@ -6,7 +6,7 @@
   <title>You’ll Never Know We Were Here</title>
   <meta name="description" content="">
   <meta name="og:image" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   <link href="voice.css" rel="stylesheet">
 </head>
@@ -25,20 +25,10 @@
       <button type="submit">Submit protest</button>
     </form>
 
-    <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div>
-
-    <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div>
-
-    <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div>
-
-    <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div>
-
-    <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div>
+    <div id="moderated-protests">
+      <!-- <div class="cardboard">Lorem ipsum dolor sit amet</div>
+    <div class="stick"></div> -->
+    </div>
 
   </div>
 
@@ -49,6 +39,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
   <script src="voice.js"></script>
+  <script src="https://spreadsheets.google.com/feeds/cells/1P1WbdUmjkliXsqVjve7VkKLVXpFwrx5exWrDoB6F078/od6/public/values?alt=json-in-script&callback=build_protests"></script>
 
 </body>
 </html>
