@@ -120,10 +120,9 @@ var build_protests = function(response) {
 	var all_entries = sheet2array.get(response, 'A2')
 	var approved_entries = []
 
-	for (var i = 0; i < all_entries.length; i++) {
+	for (var i = 0; i < all_entries.length; i++)
 		if (all_entries[i][1] && all_entries[i][1]['value'] === '1')
 			approved_entries.push(all_entries[i][0]['value'])
-	}
 
 	for (var i = 0; i < approved_entries.length; i++)
 		$('#moderated-protests').append('<div class="cardboard">'+approved_entries[i]+'</div><div class="stick"></div>')
