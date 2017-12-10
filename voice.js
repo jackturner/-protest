@@ -1,5 +1,11 @@
+$('.info-link').on('click', function(e) {
+  e.preventDefault()
+  $('html, body').animate({ scrollTop: 0 }, 400)
+  $('#wrapper').toggleClass('hide')
+})
+
 $('button').on('click', function(e) {
-  e.preventDefault();
+  e.preventDefault()
   var jqxhr = $.ajax({
     url: 'https://script.google.com/a/turner.io/macros/s/AKfycby9oN0_8u43R7i7SQx-VK6QDIqCe0zzgA-kFvABuQiINdRiOH0/exec',
     method: 'get',

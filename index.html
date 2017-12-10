@@ -12,30 +12,40 @@
 </head>
 <body>
 
-  <a id="info-link" title="Information about “You’ll Never Know We Were Here”" href="#">
-    <img src="images/info.svg" alt="More information" width="28" />
-  </a>
+  <div id="more-info">
+    <a id="hide-info-link" class="info-link" title="Return…" href="#">
+      <img src="images/close.svg" alt="Hide information" width="36" />
+    </a>
 
-  <div id="page">
-
-    <form>
-      <label for="protest">Create your own protest</label>
-      <textarea id="protest" class="cardboard" name="protest" placeholder="Your protest here…"></textarea>
-      <div class="stick"></div>
-      <button type="submit">Submit protest</button>
-    </form>
-
-    <div id="moderated-protests">
-      <!-- <div class="cardboard">Lorem ipsum dolor sit amet</div>
-    <div class="stick"></div> -->
-    </div>
-
+    <h1>“You’ll Never Know We Were Here”</h2>
+    <h2>by Fernando Orellana</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/235449539' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
   </div>
 
-  <video poster="videos/voice-short.gif" autoplay webkit-playsinline playsinline muted loop>
-    <source src="videos/voice.mp4" type="video/mp4" />
-  </video>
-  <div class="dim"></div>
+  <div id="wrapper">
+    <a id="show-info-link" class="info-link" title="Information about “You’ll Never Know We Were Here”" href="#">
+      <img src="images/info.svg" alt="More information" width="36" />
+    </a>
+
+    <div id="main-scrolling-area">
+
+      <form>
+        <label for="protest">Create your own protest</label>
+        <textarea id="protest" class="cardboard" name="protest" placeholder="Your protest here…"></textarea>
+        <div class="stick"></div>
+        <button type="submit">Submit protest</button>
+      </form>
+
+      <div id="moderated-protests"></div>
+
+    </div>
+
+    <video poster="videos/voice-short.gif" autoplay webkit-playsinline playsinline muted loop>
+      <source src="videos/voice.mp4" type="video/mp4" />
+    </video>
+    <div class="dim"></div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
   <script src="voice.js"></script>
