@@ -37,6 +37,10 @@ a {
   margin-bottom: 20px;
 }
 
+#more-info a {
+  text-decoration: underline;
+}
+
 #wrapper {
   position: absolute;
   z-index: 1;
