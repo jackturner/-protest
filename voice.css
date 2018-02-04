@@ -55,7 +55,7 @@ a {
 }
 
 #main-scrolling-area {
-  padding-top: 70vh;
+  padding-top: 55vh;
   padding-bottom: 10%;
   text-align: center;
 }
@@ -89,6 +89,7 @@ video {
 /* FORM STYLING */
 form {
   margin-bottom: 4em;
+  position: relative;
 }
 
 label,
@@ -127,7 +128,16 @@ label {
 }
 
 textarea.cardboard {
-  height: 12rem;
+  height: 8rem;
+  transition: opacity 300ms ease;
+}
+
+#success-message {
+  position: absolute;
+  z-index: -1;
+  margin: 2rem 20%;
+  font-size: 1.6rem;
+  font-style: italic;
 }
 
 button {
@@ -137,6 +147,17 @@ button {
   background: rgb(255,255,255);
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
+  transition: opacity 300ms ease;
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+.disabled label,
+.disabled textarea.cardboard,
+.disabled button[disabled] {
+  opacity: 0
 }
 
 #moderated-protests .cardboard {
