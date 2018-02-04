@@ -112,7 +112,9 @@ label {
   resize: none;
   border: none;
   outline: none;
-  background-color: #C0A890;
+  background: url(images/cardboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: rgb(0,0,0);
   text-align: center;
   font-size: 1.65rem;
