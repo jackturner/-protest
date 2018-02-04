@@ -18,8 +18,15 @@ $('button').on('click', function(e) {
 })
 
 var successful_protest = function (response) {
-  console.log(response)
+  // console.log(response)
   $('form').addClass('disabled')
+  setTimeout(reset_the_form, 2000)
+}
+
+var reset_the_form = function() {
+  $('#protest').val("")
+  $('button').prop('disabled', false)
+  $('form').removeClass('disabled')
 }
 
 $(window).on('scroll', function() {
