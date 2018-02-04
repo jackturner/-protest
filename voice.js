@@ -138,6 +138,6 @@ var build_protests = function(response) {
 		if (all_entries[i][1] && all_entries[i][1]['value'] === '1')
 			approved_entries.push(all_entries[i][0]['value'])
 
-	for (var i = 0; i < approved_entries.length; i++)
+	for (var i = approved_entries.length - 1; i >= 0; i--)
 		$('#moderated-protests').append('<div class="cardboard">'+approved_entries[i]+'</div>')
 }
