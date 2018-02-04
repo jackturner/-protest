@@ -106,6 +106,7 @@ label {
 }
 
 .cardboard {
+  margin-bottom: 0.5em;
   padding: 28px 12px;
   width: 70%;
   resize: none;
@@ -127,16 +128,6 @@ textarea.cardboard {
   height: 12rem;
 }
 
-.stick {
-  display: block;
-  content: " ";
-  margin: 0 auto 0.5rem;
-  width: 3%;
-  height: 50px;
-  background-image: -webkit-linear-gradient(top, rgba(149,130,106,1), rgba(149,130,106,0));
-  background-image: linear-gradient(top, rgba(149,130,106,1), rgba(149,130,106,0));
-}
-
 button {
   padding: 3px 5px;
   border: none;
@@ -146,6 +137,6 @@ button {
   font-family: 'Helvetica Neue', Helvetica, arial, sans-serif;
 }
 
-#moderated-protests .stick {
+#moderated-protests .cardboard {
   margin-bottom: 2rem;
 }

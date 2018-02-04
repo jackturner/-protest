@@ -131,5 +131,5 @@ var build_protests = function(response) {
 			approved_entries.push(all_entries[i][0]['value'])
 
 	for (var i = 0; i < approved_entries.length; i++)
-		$('#moderated-protests').append('<div class="cardboard">'+approved_entries[i]+'</div><div class="stick"></div>')
+		$('#moderated-protests').append('<div class="cardboard">'+approved_entries[i]+'</div>')
 }
