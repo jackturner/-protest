@@ -20,8 +20,12 @@ a {
 }
 
 #more-info {
+  display: none;
   position: absolute;
   padding: 80px 15% 0;
+}
+.show-more-info #more-info {
+  display: block;
 }
 
 #more-info h1 {
@@ -47,7 +51,7 @@ a {
   width: 100%;
   transition: opacity 400ms ease;
 }
-#wrapper.hide {
+.show-more-info #wrapper {
   opacity: 0.0;
   pointer-events: none;
 }

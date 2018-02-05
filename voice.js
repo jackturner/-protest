@@ -1,7 +1,7 @@
 $('.info-link').on('click', function(e) {
   e.preventDefault()
   $('html, body').animate({ scrollTop: 0 }, 400)
-  $('#wrapper').toggleClass('hide')
+  $('body').toggleClass('show-more-info')
 })
 
 $('button').on('click', function(e) {
