@@ -20,7 +20,7 @@ $('button').on('click', function(e) {
 var successful_protest = function (response) {
   // console.log(response)
   $('form').addClass('disabled')
-  setTimeout(reset_the_form, 2000)
+  setTimeout(reset_the_form, 6000)
 }
 
 var reset_the_form = function() {
