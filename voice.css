@@ -173,6 +173,15 @@ button[disabled] {
   opacity: 0
 }
 
+#moderated-protests {
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+#moderated-protests.fade-in {
+  opacity: 1;
+}
+
 #moderated-protests .cardboard {
   margin-bottom: 2rem;
 }

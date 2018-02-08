@@ -147,4 +147,6 @@ var build_protests = function(response) {
 
 	for (var i = approved_entries.length - 1; i >= 0; i--)
 		$('#moderated-protests').append('<div class="cardboard">'+approved_entries[i]+'</div>')
+
+  $('#moderated-protests').addClass('fade-in')
 }
