@@ -143,7 +143,7 @@ label {
 textarea.cardboard {
   height: 8rem;
   transition: opacity 300ms ease;
-  box-shadow: inset 0 1px 10px rgba(0,0,0,0.5);    
+  box-shadow: inset 0 1px 5px rgba(0,0,0,0.5);    
 }
 
 #success-message {
