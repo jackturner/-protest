@@ -10,7 +10,7 @@ $('button').on('click', function(e) {
   if (protest === "") return
   $(this).prop('disabled', true)
   var jqxhr = $.ajax({
-    url: 'https://script.google.com/a/turner.io/macros/s/AKfycby9oN0_8u43R7i7SQx-VK6QDIqCe0zzgA-kFvABuQiINdRiOH0/exec',
+    url: 'https://script.google.com/macros/s/AKfycbyeRcqTelz_8DXETrSWywU2GBDBEOoMGkZOUgOSWnNn6iP57cGY/exec',
     method: 'get',
     dataType: 'json',
     data: { protest: protest }
@@ -142,7 +142,7 @@ var build_protests = function(response) {
 	var approved_entries = []
 
 	for (var i = 0; i < all_entries.length; i++)
-		if (all_entries[i][1] && all_entries[i][1]['value'] === '✅' && all_entries[i][0])
+		if (all_entries[i][1] && all_entries[i][1]['value'] === 'TRUE')
 			approved_entries.push(all_entries[i][0]['value'])
 
 	for (var i = approved_entries.length - 1; i >= 0; i--)
