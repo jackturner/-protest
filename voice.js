@@ -9,16 +9,15 @@ $('button').on('click', function(e) {
   var protest = $('#protest').val()
   if (protest === "") return
   $(this).prop('disabled', true)
-  var jqxhr = $.ajax({
+  var jqxhr = $.getJSON({
     url: 'https://script.google.com/macros/s/AKfycbyeRcqTelz_8DXETrSWywU2GBDBEOoMGkZOUgOSWnNn6iP57cGY/exec',
     method: 'get',
     dataType: 'json',
-    data: { protest: protest }
+    data: { protest: protest, approval: 'FALSE' }
   }).success(successful_protest)
 })
 
 var successful_protest = function (response) {
-  // console.log(response)
   $('form').addClass('disabled')
   setTimeout(reset_the_form, 6000)
 }
