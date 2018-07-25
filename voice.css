@@ -97,6 +97,11 @@ video {
   bottom: -100px;
   left: 0;
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  .dim {
+    position: fixed;
+  }
+}
 
 /* FORM STYLING */
 form {
